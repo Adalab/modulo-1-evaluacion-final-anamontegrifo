@@ -18,13 +18,18 @@
     animation-iteration-count: infinite;
 }
 .int-nav {
-    @include footerFont();
     padding-top: 60px;
+    &__item {
+        @include footerFont();
+    }
 }
 .sm-nav {
-    @include footerFont();
     padding-top: 30px;
+    &__item {
+        @include footerFont();
+    }
 }
+
 .copy {
     padding-top: 30px;
     padding-bottom: 45px;

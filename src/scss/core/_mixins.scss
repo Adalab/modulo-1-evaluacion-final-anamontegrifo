@@ -63,6 +63,7 @@
 
 //footer font
 @mixin footerFont() {
+    text-decoration: none;
     color: $white;
     font-size: 16px;
     line-height: 1.88;
