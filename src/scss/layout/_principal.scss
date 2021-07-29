@@ -61,6 +61,11 @@
         grid-template-rows: 120px 172px 105px;
         column-gap: 27.7px; 
     }
+    @include desktop {
+        grid-template-rows: 150px 172px 105px;
+        column-gap: 26.2px;
+        margin: 0 85px;
+    }
 }
 .reasons {
     height: 624px;
@@ -102,11 +107,16 @@
         @include tablet {
             grid-column: 1 / 4;
             width: 210px;
-
+        }
+        @include desktop {
+        width: 255px;
         }
     }
     @include tablet {
         height: 397px;
         
+    }
+    @include desktop {
+        height: 427px;
     }
 }
