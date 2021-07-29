@@ -68,3 +68,17 @@
     line-height: 1.88;
     text-transform: uppercase;
 }
+
+//Mediaqueries
+
+@mixin tablet {
+    @media all and (min-width:768px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media all and (min-width:1200px) {
+        @content;
+    }
+} 
