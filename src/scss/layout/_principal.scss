@@ -75,7 +75,9 @@
         @include sectionTitle();
         @include tablet {
             grid-column: 1 / 4;
-
+        }
+        @include desktop{
+            padding-top: 60px;
         }
     }
     &__article--title {
