@@ -46,6 +46,10 @@
         font-size: 26px;
         line-height: 1.73;
     }
+    @include desktop {
+        font-size: 32px;
+        line-height: 1.41;
+    }
 }
 
 //Section article title
