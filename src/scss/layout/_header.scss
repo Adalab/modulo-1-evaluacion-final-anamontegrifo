@@ -1,15 +1,39 @@
-.header{
+.header {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
     width: 100vw;
     height: 100vh;
+    max-height: 768px;
     background: url(../images/cover.jpg) center;
     background-repeat: no-repeat;
 
-}
-.header__title{
-    @include headerTitle();
+    &__menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 44px;
+        height: 44px;
+        background-color: $mediumBlue;
+        line-height: 44px;
+    }
 
+    &__title {
+        @include headerTitle();  
+        margin-bottom: 10px;      
+    }
+    &__text {
+        font-family: 'Roboto', sans-serif;
+        color: $white;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    &__arrow {
+        @include arrow();
+        margin-bottom: 53px;
+    }
 }
