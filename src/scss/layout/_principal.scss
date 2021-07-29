@@ -30,6 +30,9 @@
             transform: scale(1.2);
         }
     }
+    @include tablet {
+        height: 330px;
+    }
 }
 .main-grid {
     display: grid;
