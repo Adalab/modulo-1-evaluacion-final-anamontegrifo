@@ -1,11 +1,19 @@
 .footer {
     height: 465px;
-    background-color: $darkBlue;
+    background-color: $darkBlue;    
+    @include tablet {
+    height: 240px;
+    }
 }
-.footer-grid {
+.footer-flex{
     display: flex;
     flex-direction: column;
     text-align: center;
+    @include tablet {
+        flex-direction: row;
+        justify-content: center;
+        text-align: left;
+    }
 }
 .footer__arrow {
     position: absolute;
@@ -22,11 +30,22 @@
     &__item {
         @include footerFont();
     }
+    @include tablet {
+        order: 2;
+        padding-top: 45px;
+        width: 210px;
+        margin: 0 30px;
+    }
 }
 .sm-nav {
     padding-top: 30px;
     &__item {
         @include footerFont();
+    }
+    @include tablet {
+        order: 3;
+        padding-top: 45px;
+        width: 210px;
     }
 }
 
@@ -38,5 +57,10 @@
     line-height: 2.14;
     &__heart {
         color: $orange;
+    }
+    @include tablet {
+        order: 1;
+        padding-top: 45px;
+        width: 210px;
     }
 }
