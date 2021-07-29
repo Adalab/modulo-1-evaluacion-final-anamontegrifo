@@ -39,6 +39,10 @@
     font-weight: bold;
     line-height: 1.25;
     text-transform: capitalize;
+    @include tablet {
+        font-size: 26px;
+        line-height: 1.73;
+    }
 }
 
 //Section article title
@@ -53,6 +57,10 @@
 @mixin sectionText() {
     font-size: 18px;
     line-height: 1.67;
+    @include tablet {
+        font-size: 20px;
+        line-height: 1.5;
+    }
 }
 
 //Section button

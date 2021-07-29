@@ -11,6 +11,9 @@
     &__title {
         @include sectionTitle();
         margin-bottom: 15px;
+        @include tablet {
+            margin-bottom: 30px;
+        }
     }
     &__text {
         @include sectionText();
@@ -25,9 +28,11 @@
         color: $orange;
         transform: scale(1);
         transition: transform ease 0.4s;
-
         &:hover {
             transform: scale(1.2);
+        }
+        @include tablet {
+            width: 91px;
         }
     }
     @include tablet {
