@@ -13,6 +13,9 @@
         font-size: 80px;
         line-height: 1.33;
     }
+    @include desktop {
+        font-size: 100px;
+    }
 
 }
 
