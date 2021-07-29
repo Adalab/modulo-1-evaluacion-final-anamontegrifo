@@ -21,9 +21,48 @@
         @include sectionButton();
         width: 76px;
         border: 2px solid $orange;
+        background-color: $white;
         color: $orange;
-    
-        
+        transform: scale(1);
+        transition: transform ease 0.3s;
 
+        &:hover {
+            transform: scale(1.2);
+        }
+    }
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 105px 138px 138px 138px 105px;
+    text-align: center;
+}
+.reasons {
+    height: 624px;
+    background-color: $iceBlue;
+    &__title {
+        padding-top: 30px;
+        @include sectionTitle();
+    }
+    &__article--title {
+        padding: 0 55px;
+        @include articleTitle();
+    }
+    &__article--text {
+        padding: 0 55px;
+        @include sectionText;
+    }
+    &__button {
+        @include sectionButton();
+        margin-left: auto;
+        margin-right: auto;
+        width: 184px;
+        background-color: $orange;
+        color: $white;
+        transform: scale(1);
+        transition: transform ease 0.3s;
+        &:hover {
+            transform: scale(1.2);
+        }
     }
 }

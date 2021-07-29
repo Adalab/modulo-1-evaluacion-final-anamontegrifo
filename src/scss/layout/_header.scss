@@ -5,8 +5,9 @@
     align-items: center;
     width: 100vw;
     height: 100vh;
-    max-height: 768px;
-    background: url(../images/cover.jpg) center;
+    background-image: url(../images/cover.jpg);
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
 
     &__menu {
