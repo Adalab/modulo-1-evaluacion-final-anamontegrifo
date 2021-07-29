@@ -1,0 +1,35 @@
+.footer {
+    height: 465px;
+    background-color: $darkBlue;
+}
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 210px 120px 135px;
+    text-align: center;
+}
+.footer__arrow {
+    position: absolute;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    @include arrow();
+}
+.int-nav {
+    @include footerFont();
+    padding-top: 60px;
+}
+.sm-nav {
+    @include footerFont();
+    padding-top: 30px;
+}
+.copy {
+    padding-top: 30px;
+    padding-bottom: 45px;
+    color: $white;
+    font-size: 14px;
+    line-height: 2.14;
+    &__heart {
+        color: $orange;
+    }
+}
