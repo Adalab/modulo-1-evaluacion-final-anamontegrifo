@@ -1,32 +1,14 @@
 // fonts
-@mixin headerTitle() {
-    font-family: "Roboto Slab", serif;
-    color: #ffffff;
-    font-size: 42px;
-    text-shadow: 0 2px 3px var(--k-20);
-    font-weight: bold;
-    line-height: 1.31;
-    text-transform: uppercase;
-    text-align: center;
-}
+$regular: 'Roboto', sans-serif;
+$title: 'Roboto Slab', serif;
 
 // colors
 $darkBlue: #304268;
 $mediumBlue: #0271bc;
 $lightBlue: #8ccbea;
 $white: #ffffff;
+$black: #000000;
 $orange: #f26002;
+$grey: #4a4a4a;
 
-//arrow
-@mixin arrow() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: $white;
-    line-height: 44px;
-    margin-left: auto;
-    margin-right: auto;
-}
+

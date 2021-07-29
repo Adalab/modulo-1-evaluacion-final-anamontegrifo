@@ -1,0 +1,29 @@
+.tips {
+    height: 376px;
+    padding-top: 30px;
+    &__small {
+        text-transform: capitalize;
+        font-family: $regular;
+        font-size: 14px;
+        color: $lightBlue;
+        line-height: 2.14;
+    }
+    &__title {
+        @include sectionTitle();
+        margin-bottom: 15px;
+    }
+    &__text {
+        @include sectionText();
+        color: $grey;
+        margin-bottom: 30px;
+    }
+    &__button {
+        @include sectionButton();
+        width: 76px;
+        border: 2px solid $orange;
+        color: $orange;
+    
+        
+
+    }
+}

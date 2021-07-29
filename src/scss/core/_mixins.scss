@@ -1,0 +1,54 @@
+// Header title
+@mixin headerTitle() {
+    font-family: "Roboto Slab", serif;
+    color: $white;
+    font-size: 42px;
+    text-shadow: 0 2px 3px var(--k-20);
+    font-weight: bold;
+    line-height: 1.31;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+//arrow button
+@mixin arrow() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: $white;
+    line-height: 44px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+//Section title
+@mixin sectionTitle() {
+    font-family: "Roboto Slab", serif;
+    color: $black;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.25;
+    text-transform: capitalize;
+}
+
+//Section text
+@mixin sectionText() {
+    font-size: 18px;
+    line-height: 1.67;
+}
+
+//Section button
+@mixin sectionButton() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    border-radius: 22.5px;
+    font-size: 20px;
+    line-height: 45px;
+    font-weight: 500;
+
+}
