@@ -8,6 +8,12 @@
     line-height: 1.31;
     text-transform: uppercase;
     text-align: center;
+     
+    @include tablet {
+        font-size: 80px;
+        line-height: 1.33;
+    }
+
 }
 
 //arrow button

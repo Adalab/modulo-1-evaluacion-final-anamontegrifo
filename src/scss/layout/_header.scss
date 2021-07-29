@@ -26,15 +26,24 @@
     &__title {
         @include headerTitle();
         margin-bottom: 10px;
+        @include tablet {
+            margin-bottom: 20px;
+        }
     }
     &__text {
         font-family: $regular;
         color: $white;
         text-align: center;
         margin-bottom: 45px;
+        @include tablet {
+        font-size: 24px;
+        }
     }
     &__arrow {
         @include arrow();
         margin-bottom: 53px;
+        @include tablet {
+            margin-bottom: 45px;
+        }
     }
 }
