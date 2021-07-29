@@ -24,7 +24,7 @@
         background-color: $white;
         color: $orange;
         transform: scale(1);
-        transition: transform ease 0.3s;
+        transition: transform ease 0.4s;
 
         &:hover {
             transform: scale(1.2);
@@ -60,7 +60,7 @@
         background-color: $orange;
         color: $white;
         transform: scale(1);
-        transition: transform ease 0.3s;
+        transition: transform ease 0.4s;
         &:hover {
             transform: scale(1.2);
         }
