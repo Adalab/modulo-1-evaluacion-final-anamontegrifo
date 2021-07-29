@@ -44,6 +44,11 @@
     grid-template-columns: 1fr;
     grid-template-rows: 105px 138px 138px 138px 105px;
     text-align: center;
+    @include tablet {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 120px 172px 105px;
+        column-gap: 27.7px; 
+    }
 }
 .reasons {
     height: 624px;
@@ -51,14 +56,24 @@
     &__title {
         padding-top: 30px;
         @include sectionTitle();
+        @include tablet {
+            grid-column: 1 / 4;
+
+        }
     }
     &__article--title {
         padding: 0 55px;
         @include articleTitle();
+        @include tablet {
+            padding: 0;
+        }
     }
     &__article--text {
         padding: 0 55px;
         @include sectionText;
+        @include tablet {
+            padding: 14px 0 0 0;
+        }
     }
     &__button {
         @include sectionButton();
@@ -72,5 +87,14 @@
         &:hover {
             transform: scale(1.2);
         }
+        @include tablet {
+            grid-column: 1 / 4;
+            width: 210px;
+
+        }
+    }
+    @include tablet {
+        height: 397px;
+        
     }
 }
