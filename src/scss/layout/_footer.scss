@@ -36,6 +36,9 @@
         width: 210px;
         margin: 0 30px;
     }
+    @include desktop {
+        width: 160px;
+    }
 }
 .sm-nav {
     padding-top: 30px;
@@ -46,6 +49,9 @@
         order: 3;
         padding-top: 45px;
         width: 210px;
+    }
+    @include desktop {
+        width: 160px;
     }
 }
 
@@ -62,5 +68,8 @@
         order: 1;
         padding-top: 45px;
         width: 210px;
+    }
+    @include desktop {
+        width: 160px;
     }
 }
