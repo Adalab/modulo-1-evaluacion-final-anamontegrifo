@@ -86,21 +86,16 @@
             padding-top: 60px;
         }
     }
-    &__article {
-        padding: 0 55px;
-
-        &--title {
-            @include articleTitle();
-            @include tablet {
-                padding: 0;
-            }
+    &__article--title {
+        @include articleTitle();
+        @include tablet {
+            padding: 0;
         }
-
-        &--text {
-            @include articleText;
-            @include tablet {
-                padding: 14px 0 0 0;
-            }  
+    }
+    &__article--text {
+        @include articleText;
+        @include tablet {
+            padding: 14px 0 0 0;
         }
     }
 
