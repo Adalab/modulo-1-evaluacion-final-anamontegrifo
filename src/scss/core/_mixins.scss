@@ -74,6 +74,9 @@
     line-height: 1.88;
     text-transform: uppercase;
     color: $white;
+    &:hover {
+        color: $orange;
+    }
 }
 
 //Mediaqueries
