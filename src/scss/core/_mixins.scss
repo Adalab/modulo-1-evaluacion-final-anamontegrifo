@@ -61,6 +61,11 @@
     font-size: 20px;
     line-height: 45px;
     font-weight: 500;
+    transform: scale(1);
+    transition: transform ease 0.4s;
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
 //footer font

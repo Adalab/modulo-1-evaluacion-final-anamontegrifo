@@ -1,17 +1,19 @@
 .tips {
     height: 376px;
     padding-top: 30px;
+
     &__small {
-        text-transform: capitalize;
         font-family: $regular;
         font-size: 14px;
         line-height: 2.14;
+        text-transform: capitalize;
         color: $lightBlue;
         @include desktop {
             font-size: 16px;
             line-height: 1.88;
         }
     }
+
     &__title {
         @include mainTitle();
         margin-bottom: 15px;
@@ -19,22 +21,19 @@
             margin-bottom: 30px;
         }
     }
+
     &__text {
         @include articleText();
-        color: $grey;
         margin-bottom: 30px;
+        color: $grey;   
     }
+
     &__button {
         @include mainButton();
         width: 76px;
         border: 2px solid $orange;
         background-color: $white;
         color: $orange;
-        transform: scale(1);
-        transition: transform ease 0.4s;
-        &:hover {
-            transform: scale(1.2);
-        }
         @include tablet {
             width: 91px;
         }
@@ -50,25 +49,30 @@
         padding-top: 60px;
     }
 }
+
 .main-grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 105px 138px 138px 138px 105px;
     text-align: center;
+
     @include tablet {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 120px 172px 105px;
         column-gap: 27.7px; 
     }
+
     @include desktop {
         grid-template-rows: 150px 172px 105px;
         column-gap: 26.2px;
         margin: 0 85px;
     }
 }
+
 .reasons {
     height: 624px;
     background-color: $iceBlue;
+    
     &__title {
         padding-top: 30px;
         @include mainTitle();
@@ -79,6 +83,7 @@
             padding-top: 60px;
         }
     }
+
     &__article--title {
         padding: 0 55px;
         @include articleTitle();
@@ -86,6 +91,7 @@
             padding: 0;
         }
     }
+
     &__article--text {
         padding: 0 55px;
         @include articleText;
@@ -93,6 +99,7 @@
             padding: 14px 0 0 0;
         }
     }
+
     &__button {
         @include mainButton();
         margin-left: auto;
@@ -100,11 +107,6 @@
         width: 184px;
         background-color: $orange;
         color: $white;
-        transform: scale(1);
-        transition: transform ease 0.4s;
-        &:hover {
-            transform: scale(1.2);
-        }
         @include tablet {
             grid-column: 1 / 4;
             width: 210px;
@@ -113,6 +115,7 @@
         width: 255px;
         }
     }
+
     @include tablet {
         height: 397px;
         

@@ -14,6 +14,7 @@
         position: fixed;
         left: 0;
         top: 0;
+        z-index: 999;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -43,6 +44,7 @@
             margin-bottom: 0;
         }
     }
+
     &__text {
         font-family: $regular;
         color: $white;
@@ -53,6 +55,7 @@
             margin-bottom: 30px;
         }
     }
+    
     &__arrow {
         @include arrow();
         margin-bottom: 53px;
