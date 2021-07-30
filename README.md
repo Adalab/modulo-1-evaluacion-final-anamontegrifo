@@ -1,11 +1,62 @@
-<h1 align="center">Hi 👋, I'm Ana Montegrifo</h1>
-<h3 align="center">A passionate trainee frontend developer from Madrid.</h3>
+# Módulo 1 - Evaluación final
 
-- 🌱 I’m currently learning **all about frontend development in Adalab.**
+Este proyecto está creado sobre el Starter Kit de Adalab. Es el ejercicio de evaluación personal del módulo HTML y CSS. Se trata de ejecutar la maquetación de una página web sobre un proyecto diseñado en Zeplin, aplicando diseño responsive y creando la adaptación para móvil, tablet y desktop.
 
-- 👨‍💻 All of my projects are available at [https://github.com/anamontegrifo](https://github.com/anamontegrifo)
+### Cómo trabajar con este proyecto
 
-- 📫 How to reach me **amontegrifo@gmail.com**
+> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/)
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://www.figma.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="figma" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.adobe.com/in/products/illustrator.html" target="_blank"> <img src="https://www.vectorlogo.zone/logos/adobe_illustrator/adobe_illustrator-icon.svg" alt="illustrator" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> </p>
+1. Descarga el proyecto en tu equipo e inclúyelo en tu propio repositorio.
+2. Instala las dependencias locales ejecutando en la terminal el comando:
+
+```bash
+npm install
+```
+
+3. Arranca el proyecto ejecutando el siguiente comando:
+
+```bash
+npm start
+```
+
+Esto tendrás que hacerlo cada vez que te pongas a programar. Después de esto puedes empezar a editar los ficheros dentro de la carpeta `src/`
+
+Los siguientes pasos puedes consultarlos en los vídeotutoriales de **Adalab**:
+
+- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
+- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
+- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
+
+### Estructura del proyecto
+
+Esta es la estructura de carpetas:
+
+```
+src
+ ├── html
+ |  ├── partials
+ |  └── index.html
+ |
+ ├── images
+ |
+ ├── scss
+    ├── core
+    ├── layout
+    ├── pages
+    └── main.scss
+```
+
+### Tecnologías y recursos utilizados para el proyecto:
+
+- HTML y preprocesador SASS con sintáxis SCSS, usando
+  1. Flexbox
+  2. Trabajo en ramas
+  3. Variables
+  4. Estilos anidados
+  5. BEM
+  6. Mixins y mediamixins
+  7. CSS grid
+  8. Transiciones y animaciones
+- Node.js
+- Markdown
+- Gulp
