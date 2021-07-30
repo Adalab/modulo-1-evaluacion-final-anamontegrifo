@@ -12,14 +12,13 @@
     margin-right: auto;
 }
 
-//Section title
-@mixin sectionTitle() {
+//Main titles
+@mixin mainTitle() {
     font-family: $title;
-    color: $black;
     font-size: 24px;
-    font-weight: bold;
     line-height: 1.25;
     text-transform: capitalize;
+    color: $black;
     @include tablet {
         font-size: 26px;
         line-height: 1.73;
@@ -30,20 +29,20 @@
     }
 }
 
-//Article title
+//Article titles
 @mixin articleTitle() {
     font-family: $title;
-    color: $black;
     font-size: 18px;
-    font-weight: bold;
     line-height: 1.67;
+    color: $black;
     @include tablet {
         font-size: 24px;
         line-height: 1.25;
     }
 }
-//Section text
-@mixin sectionText() {
+
+//Article texts
+@mixin articleText() {
     font-size: 18px;
     line-height: 1.67;
     @include tablet {
@@ -52,8 +51,8 @@
     }
 }
 
-//Section button
-@mixin sectionButton() {
+//Main buttons
+@mixin mainButton() {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,14 +65,13 @@
 
 //footer font
 @mixin footerFont() {
-    color: $white;
     font-size: 16px;
     line-height: 1.88;
     text-transform: uppercase;
+    color: $white;
 }
 
 //Mediaqueries
-
 @mixin tablet {
     @media all and (min-width: 768px) {
         @content;

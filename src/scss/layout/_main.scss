@@ -5,28 +5,27 @@
         text-transform: capitalize;
         font-family: $regular;
         font-size: 14px;
-        color: $lightBlue;
         line-height: 2.14;
+        color: $lightBlue;
         @include desktop {
             font-size: 16px;
             line-height: 1.88;
-
         }
     }
     &__title {
-        @include sectionTitle();
+        @include mainTitle();
         margin-bottom: 15px;
         @include tablet {
             margin-bottom: 30px;
         }
     }
     &__text {
-        @include sectionText();
+        @include articleText();
         color: $grey;
         margin-bottom: 30px;
     }
     &__button {
-        @include sectionButton();
+        @include mainButton();
         width: 76px;
         border: 2px solid $orange;
         background-color: $white;
@@ -72,7 +71,7 @@
     background-color: $iceBlue;
     &__title {
         padding-top: 30px;
-        @include sectionTitle();
+        @include mainTitle();
         @include tablet {
             grid-column: 1 / 4;
         }
@@ -89,13 +88,13 @@
     }
     &__article--text {
         padding: 0 55px;
-        @include sectionText;
+        @include articleText;
         @include tablet {
             padding: 14px 0 0 0;
         }
     }
     &__button {
-        @include sectionButton();
+        @include mainButton();
         margin-left: auto;
         margin-right: auto;
         width: 184px;
