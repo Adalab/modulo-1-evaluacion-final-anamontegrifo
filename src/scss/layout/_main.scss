@@ -103,8 +103,10 @@
         margin-left: auto;
         margin-right: auto;
         width: 184px;
-        background-color: $orange;
-        color: $white;
+        margin-top: 20px;
+        border: 2px solid $orange;
+        background-color: $white;
+        color: $orange;
         @include mainButton();
         @include tablet {
             grid-column: 1 / 4;
