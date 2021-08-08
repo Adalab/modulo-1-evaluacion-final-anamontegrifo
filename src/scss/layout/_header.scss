@@ -2,12 +2,19 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
     width: 100vw;
     height: 100vh;
     background-image: url(../images/cover.jpg);
     background-position: center;
-    background-size: cover; 
+    background-size: cover;
+
+    &__hero {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        text-align: center;
+    }
 
     &__menu {
         position: fixed;
@@ -24,6 +31,7 @@
     }
 
     &__title {
+        width: 290px;
         font-family: $title;
         color: $white;
         font-size: 42px;
@@ -31,14 +39,16 @@
         font-weight: bold;
         line-height: 1.31;
         text-transform: uppercase;
-        text-align: center;
         margin-bottom: 10px;
         @include tablet {
+            width: 752px;
+            width: px;
             font-size: 80px;
             line-height: 1.33;
             margin-bottom: 20px;
         }
         @include desktop {
+            width: 772px;
             font-size: 100px;
             margin-bottom: 0;
         }
@@ -54,7 +64,7 @@
             margin-bottom: 30px;
         }
     }
-    
+
     &__arrow {
         @include arrow();
         margin-bottom: 53px;
